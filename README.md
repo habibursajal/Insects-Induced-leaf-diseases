@@ -1,4 +1,3 @@
-```markdown
 # Insects-Induced-Leaf-Diseases
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -26,7 +25,6 @@ We have strictly controlled the environment to ensure that our results can be re
 *   **Environment:** Python 3.10+, PyTorch 2.0.0+ (CUDA 11.8).
 *   **Random Seed:** `42` (Fixed for all data splits and model weight initializations).
 *   **Preprocessing:** Images resized to `224x224`, normalized using ImageNet mean `[0.485, 0.456, 0.406]` and std `[0.229, 0.224, 0.225]`.
-*   **Configuration:** All hyperparameters are centralized in `src/config.py`.
 
 ---
 
@@ -34,14 +32,10 @@ We have strictly controlled the environment to ensure that our results can be re
 ```text
 Insects-Induced-leaf-diseases/
 ├── src/
-│   ├── config.py           # Hyperparameters and seed control
-│   ├── dataset.py          # Data loading and augmentation
-│   ├── models.py           # Model architectures and ensemble logic
-│   ├── utils.py            # Statistical tests and plotting functions
-│   └── train.py            # Main training and ablation study pipeline
-├── requirements.txt        # Full dependency list
-├── LICENSE                 # MIT License
-└── README.md               # Documentation
+│   └── Insects_Leaf_Diseases_Research.ipynb   # Main research pipeline
+├── requirements.txt                           # Full dependency list
+├── LICENSE                                    # MIT License
+└── README.md                                  # Documentation
 
 ```
 
@@ -60,14 +54,12 @@ pip install -r requirements.txt
 
 ### Running the Experiments
 
-To run the full pipeline, including the pairwise ablation study:
+Since the implementation is contained within a Jupyter Notebook, please follow these steps:
 
-```bash
-python src/train.py
-
-```
-
-This script will automatically generate confusion matrices, performance summary tables (CSV & LaTeX), and accuracy trade-off visualizations in the `outputs/` directory.
+1. Open the repository in your preferred environment (Jupyter Notebook, JupyterLab, or VS Code).
+2. Navigate to `src/` directory.
+3. Open and run `Insects_Leaf_Diseases_Research.ipynb` sequentially.
+*Note: Ensure your data directory is correctly mapped as specified in the notebook configuration.*
 
 ---
 
@@ -77,7 +69,7 @@ The weights for our trained models are available for peer review and replication
 
 🔗 **Download Weights:** [Insert Link to Google Drive/Hugging Face here]
 
-*Instructions: Download the weights and move the `.pth` files into the `weights/` folder before running the evaluation.*
+*Instructions: Download the weights and ensure the file paths in the notebook are updated to point to your local weight directory.*
 
 ---
 
@@ -90,5 +82,3 @@ This paper is currently under peer review. We will update this section with the 
 ## 📜 7. License
 
 This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
-
-```
