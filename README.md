@@ -67,7 +67,7 @@ Since the implementation is contained within a Jupyter Notebook, please follow t
 
 The weights for our trained models are available for peer review and replication purposes.
 
-🔗 **Download Weights:** https://drive.google.com/drive/folders/1ZjUPA746ucPquVZDk0qyO3wR-XvBhreb?usp=sharing
+🔗 **Download Weights:** https://drive.google.com/drive/folders/12T7B5a95Nz3eRlEwfVW7DNPgO9asdCZK?usp=sharing
 
 *Instructions: Download the weights and ensure the file paths in the notebook are updated to point to your local weight directory.*
 
